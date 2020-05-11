@@ -25,7 +25,7 @@ function calculate() {
     result = amount * rateB / rateA;
     result = result.toFixed(2);
     beautifulnumber = formatCurrency(to,result);
-    document.getElementById("result").innerHTML = `${amount} ${from} to ${to} is ${beautifulnumber}`;
+    document.getElementById("result").innerHTML = `${amount} <span class="cur">${from}</span> to <span class="cur">${to}</span> is <span class="num">${beautifulnumber}</span>`;
 }
 
 function switchPlace() {

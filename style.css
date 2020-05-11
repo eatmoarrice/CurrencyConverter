@@ -21,3 +21,9 @@
 .switch-icon, .start-icon {
     cursor: pointer;
 }
+
+
+.cur, .num {
+    font-weight: bold;
+    color: green;
+}
