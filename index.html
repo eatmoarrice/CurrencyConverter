@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="input-card">
+        <form class="card-content d-flex align-items-center justify-content-around">
+            <div class="form-group content-item">
+                <label for="amount">AMOUNT</label>
+                <input type="number" class="form-control" id="amount">
+            </div>
+            <div class="form-group content-item d-flex flex-column">
+                <label for="from">FROM</label>
+                    <select id="from">
+                        <option value="none">--</option>
+                        <option value="USD">USD</option>
+                        <option value="VND">VND</option>
+                        <option value="EUR">EUR</option>
+                        <option value="MYR">MYR</option>
+                        <option value="AUD">AUD</option>
+                        <option value="GBP">GBP</option>
+                     </select>
+            </div>
+            <img src="img/sync-alt.svg" width="30px;" class="switch-icon" onclick="switchPlace()">
+            <div class="form-group content-item d-flex flex-column">
+                <label for="to">TO</label>
+                <select id="to">
+                    <option value="none">--</option>
+                        <option value="USD">USD</option>
+                        <option value="VND">VND</option>
+                        <option value="EUR">EUR</option>
+                        <option value="MYR">MYR</option>
+                        <option value="AUD">AUD</option>
+                        <option value="GBP">GBP</option>
+                 </select>
+            </div>
+            <img src="img/play.svg" width="30px;" class="start-icon" onclick="calculate()">
+        </form>
+        <div id="result"></div>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>

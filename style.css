@@ -1,0 +1,21 @@
+
+.input-card {
+    padding: 20px;
+    margin: auto;
+    max-width: 800px;
+    background-color: aquamarine;
+    border-radius: 30px;
+}
+
+
+.content-item {
+    margin: 10px;
+}
+
+#amount, #from, #to {
+    height: 40px;
+}
+
+.switch-icon, .start-icon {
+    cursor: pointer;
+}
