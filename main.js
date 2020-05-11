@@ -4,7 +4,8 @@ const ratePerUSD = {
     "EUR": 0.92397,
     "AUD": 1.53669,
     "MYR": 4.33376,
-    "GBP": 0.80870
+    "GBP": 0.80870,
+    "KRW": 1,224.11
 }
 
 let rateA = 0;
