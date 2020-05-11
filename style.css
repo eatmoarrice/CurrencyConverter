@@ -5,7 +5,7 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    background-color: aquamarine;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
     border-radius: 30px;
 }
 
