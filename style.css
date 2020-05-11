@@ -27,3 +27,7 @@
     font-weight: bold;
     color: green;
 }
+
+#result {
+    text-align: center;
+}
