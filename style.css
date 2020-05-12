@@ -45,6 +45,7 @@
 }
 
 #bill-result {
+    overflow: hidden;
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
@@ -58,7 +59,8 @@
 
 .line-item {
     margin: 30px;
-    display: inline-block;
+    float: left;
+    width: 160px;
 }
 
 .bill {
@@ -87,4 +89,6 @@ hr {
     }
   }
 
-  
+  .text-in-box {
+      clear: both;
+  }
