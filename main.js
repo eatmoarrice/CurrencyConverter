@@ -65,7 +65,7 @@ function formatCurrency(type, value) {
         [1000,0],
     ];
     let totalvnd = document.getElementById("vnd-amount").value;
-    if (totalvnd > 0){
+    if (totalvnd >= 1000){
         for (let i = 0; i < bills.length; i++){
             while (totalvnd/bills[i][0]>=1){
                 bills[i][1]+=1;
@@ -80,6 +80,6 @@ function formatCurrency(type, value) {
         }
     }
     else {
-        alert("Please enter a valid amount.")
+        alert("Please enter a valid amount. The smallest you can exchange for is 1000 VND.")
     }
   }
