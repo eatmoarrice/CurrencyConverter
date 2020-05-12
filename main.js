@@ -78,6 +78,9 @@ function formatCurrency(type, value) {
                     `;
             }
         }
+        if (totalvnd > 0){
+            document.getElementById("bill-result").innerHTML += `<div class="line-item">I'll take the remaining ${totalvnd} dong, thank you very much!!</div>`
+        }
     }
     else {
         alert("Please enter a valid amount. The smallest you can exchange for is 1000 VND.")

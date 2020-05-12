@@ -51,8 +51,8 @@
     border-radius: 25px;
     text-align: center;
     color: white;
-    background-image: url("img/chalkboard.jpg");
-    background-repeat: repeat;
+    background: rgb(5,25,21);
+    background: linear-gradient(180deg, rgba(5,25,21,1) 0%, rgba(10,27,45,1) 100%);
     max-width: 660px;
 }
 
@@ -82,7 +82,9 @@ hr {
 }
 
 @media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+    .ex-button {
+      font-size: 12px;
     }
   }
+
+  
