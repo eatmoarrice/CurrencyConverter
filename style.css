@@ -40,7 +40,7 @@
 .bill {
     margin-top: 30px;
     min-height: 130px;
-    background-color: darkolivegreen;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
     max-width: 1000px;
 }
 
@@ -67,5 +67,16 @@
 
 .title {
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+hr {
+    background-color: white;   
+}
+.ex-button {
+    background-color: darkslateblue;
+    color: white;
+    border: none;
+    height: 38px;
+    border-radius: 25px;
 }
