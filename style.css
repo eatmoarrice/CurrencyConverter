@@ -10,9 +10,6 @@
 }
 
 
-.content-item {
-    margin: 10px;
-}
 
 #amount, #from, #to {
     height: 40px;
@@ -22,16 +19,53 @@
     cursor: pointer;
 }
 
-
 .cur, .num {
     font-weight: bold;
     color: green;
 }
 
 #result {
+    margin: 15px;
     text-align: center;
 }
 
 .num {
     margin-left: 5px;
+}
+
+.c-button {
+    height: 40px;
+}
+
+.bill {
+    margin-top: 30px;
+    min-height: 130px;
+    background-color: darkolivegreen;
+    max-width: 1000px;
+}
+
+#bill-result {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    background-image: url("img/chalkboard.jpg");
+    background-repeat: repeat;
+    max-width: 660px;
+}
+
+.line-item {
+    margin: 30px;
+    display: inline-block;
+}
+
+.bill {
+    padding: 20px;
+}
+
+.title {
+    color: white;
+    margin-bottom: 30px;
 }

@@ -50,3 +50,36 @@ function formatCurrency(type, value) {
     });
     return formatter.format(value);
   }
+
+  function coinExchange() {
+    document.getElementById("bill-result").innerHTML = "";
+    let bills = [
+        [500000,0],
+        [200000,0],
+        [100000,0],
+        [50000,0],
+        [20000,0],
+        [10000,0],
+        [5000,0],
+        [2000,0],
+        [1000,0],
+    ];
+    let totalvnd = document.getElementById("vnd-amount").value;
+    if (totalvnd > 0){
+        for (let i = 0; i < bills.length; i++){
+            while (totalvnd/bills[i][0]>=1){
+                bills[i][1]+=1;
+                totalvnd -= bills[i][0];
+            }
+            if (bills[i][1]>0) {
+                    document.getElementById("bill-result").innerHTML += `<div class="line-item">
+                    <img src="img/${bills[i][0]}.jpg" height="50px"   > x ${bills[i][1]}
+                </div>
+                    `;
+            }
+        }
+    }
+    else {
+        alert("Please enter a valid amount.")
+    }
+  }
