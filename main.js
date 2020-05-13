@@ -36,11 +36,13 @@ function switchPlace() {
 }
 
 function getRatePerUSD() {
-    for (let [key, value] of Object.entries(ratePerUSD)) {
-        console.log(key, value)
-        if (from === key) {rateA = value;}
-        if (to === key) {rateB = value;}
-    }
+    // for (let [key, value] of Object.entries(ratePerUSD)) {
+    //     console.log(key, value)
+    //     if (from === key) {rateA = value;}
+    //     if (to === key) {rateB = value;}
+    // }
+    rateA = ratePerUSD[from];
+    rateB = ratePerUSD[to];
 }
 
 function formatCurrency(type, value) {
